@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.NavbarT {
+  background-color: #fd7c00;
+}
+
+.NavbarT .navbar {
+  padding: 0;
+  border-bottom: 1px solid gray;
+}
+
+.NavbarT .navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.NavbarT .navbar .navbar-nav .nav-item:hover .drop-down {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.NavbarT .navbar .navbar-nav .nav-item .leftContent {
+  color: white;
+  margin-right: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.NavbarT .navbar .navbar-nav .nav-item .drop-down {
+  position: absolute;
+  list-style: none;
+  padding: 15px;
+  background-color: #fd7c00;
+  margin-top: 3px;
+  opacity: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.NavbarT .navbar .navbar-nav .nav-item .drop-down li {
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 575.99px) {
+  .NavbarT {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .NavbarT {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991.99px) {
+  .NavbarT {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
