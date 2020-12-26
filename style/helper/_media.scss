@@ -27,12 +27,66 @@
     .NavbarT {
         display: none;
     }
+    .Navbar {
+        .Desktop {
+            display: none !important;
+        }
+    }
+    .topHeader {
+        height: 120%;
+    }
+    footer {
+        .contents {
+            flex-direction: column;
+        }
+    }
+    .partenaire {
+        .contents {
+            .number {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .transformationDigitale .BG {
+        padding: 30% 0%;
+    }
+    .decouvrez {
+        padding: 50% 0%;
+    }
 }
 
 // Small
 @include Smal-medium-large($small-min-width ,$small-max-width) {
     .NavbarT {
         display: none;
+    }
+    .Navbar {
+        .Desktop {
+            display: none !important;
+        }
+    }
+    .topHeader {
+        height: 120%;
+    }
+    footer {
+        .contents {
+            flex-direction: column;
+        }
+    }
+    .partenaire {
+        .contents {
+            .number {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .transformationDigitale .BG {
+        padding: 30% 0%;
+    }
+    .decouvrez {
+        padding: 50% 0%;
     }
 }
 
@@ -41,14 +95,67 @@
     .NavbarT {
         display: none;
     }
+    .Navbar {
+        .Desktop {
+            display: none !important;
+        }
+    }
+    .topHeader {
+        height: 120%;
+    }
+    footer {
+        .contents {
+            flex-direction: column;
+        }
+    }
+    .partenaire {
+        .contents {
+            .number {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .transformationDigitale .BG {
+        padding: 20% 0%;
+    }
+    .decouvrez {
+        padding: 30% 0%;
+    }
 }
 
 // Large
 @include Smal-medium-large($large-min-width ,$large-max-width) {
-
+    .Navbar {
+        .Mobile {
+            display: none !important;
+        }
+    }
+    .asideNav {
+        display: none !important;
+    }
+    .topHeader {
+        height: 80%;
+    }
+    .transformationDigitale .BG {
+        padding: 20% 0%;
+    }
+    .decouvrez {
+        padding: 30% 0%;
+    }
 }
 
 // Extra large
 @include Extra-large($extra-large-min-width) {
-
+    .Navbar {
+        .Mobile {
+            display: none !important;
+        }
+    }
+    .asideNav {
+        display: none !important;
+    }
+    .topHeader {
+        height: 70%;
+    }
 }

@@ -1,0 +1,303 @@
+.topHeader {
+    position: relative;
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15% 0%;
+
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .overlay {
+        position: absolute;
+        background-color: rgba(black, .5);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        .contents {
+            margin-top: 10%;
+            h1 {
+                color: white;
+                font-size: 50px;
+                font-family: $primary-font;
+                font-weight: 500;
+            }
+            h2 {
+                color: white;
+                font-size: 40px;
+                font-family: $primary-font;
+                font-weight: 500;
+            }
+            p {
+                color: white;
+                font-size: 25px;
+                font-family: $primary-font;
+            }
+            button {
+                background-color: $primary-color;
+                color: white;
+                padding: 15px 60px;
+                border-radius: 9px;
+                font-size: 15px;
+                font-family: $primary-font;
+            }
+            a {
+                color: white;
+                text-decoration: revert;
+                font-size: 20px;
+                font-family: $primary-font;
+            }
+        }
+    }
+}
+
+.transformationDigitale {
+    text-align: center;
+    padding: 3% 0%;
+    h2 {
+        color: $primary-color;
+        font-family: $primary-font;
+        font-weight: 600;
+    }
+    p{
+        color: $primary-text-color;
+        font-family: $primary-font;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .BG {
+        background-image: url(../img/back2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 10% 0%;
+        .overlay {
+            position: absolute;
+            background-color: rgba($primary-text-color, .5);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            .contents {
+                margin-top: 2%;
+                .p1 {
+                    color: white;
+                }
+                .p2 {
+                    color: white;
+                }
+                .savoirPlus {
+                    background-color: $primary-color;
+                    color: white;
+                    padding: 15px 60px;
+                    border-radius: 9px;
+                    font-size: 15px;
+                    font-family: $primary-font;
+                }
+            }
+        }
+    }
+}
+
+.decouvrez {
+    background-image: url(../img/back3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 6% 0%;
+    text-align: center;
+    .overlay {
+        position: absolute;
+        background-color: rgba(black, .5);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        .contents {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                color: white;
+                font-family: $primary-font;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            p {
+                color: white;
+                font-family: $primary-font;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.partenaire {
+    text-align: center;
+    padding: 6% 0%;
+    .contents {
+        h2 {
+            color: $primary-color;
+            font-family: $primary-font;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        p {
+            color: gray;
+            font-family: $primary-font;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .number {
+            display: flex;
+            margin-top: 5%;
+            .total {
+                color: $primary-color;
+                font-family: $primary-font;
+                font-size: 50px;
+                font-weight: bold;
+            }
+            .colored {
+                font-weight: bold;
+                font-size: 18px;
+                color: $primary-text-color;
+            }
+        }
+    }
+}
+
+.vousSouhaitez {
+    background-image: url(../img/back4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 5% 0%;
+    text-align: center;
+    .contents {
+        background-color: rgba(white, .7);
+        padding: 1% 4%;
+        h2 {
+            color: $primary-text-color;
+            font-family: $primary-font;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        p {
+            color: $primary-text-color;
+            font-family: $primary-font;
+            font-size: 20px;
+        }
+        .nousContacter {
+            background-color: $primary-color;
+            color: white;
+            padding: 15px 60px;
+            border-radius: 9px;
+            font-size: 15px;
+            font-family: $primary-font;
+        }
+    }
+}
+
+.nosPartenaires {
+    text-align: center;
+    padding: 3% 0%;
+    .contents {
+        h2 {
+            color: $primary-color;
+            font-family: $primary-font;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        p {
+            color: gray;
+            .f{
+                color: $primary-text-color;
+                font-weight: bold;
+            }
+            .s {
+                color: $primary-color; 
+                font-weight: bold;
+            }
+        }
+        .contacter {
+            background-color: $primary-color;
+            color: white;
+            padding: 15px 60px;
+            border-radius: 9px;
+            font-size: 15px;
+            font-family: $primary-font;
+        }
+    }
+}
+
+.groupeProxiteam {
+    padding: 3% 0%;
+    background-color: hsl(210, 6%, 93%);
+    .contents {
+        h2 {
+            color: $primary-text-color;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        p{
+            color: gray;
+        }
+        .contacter {
+            background-color: $primary-color;
+            color: white;
+            padding: 15px 60px;
+            border-radius: 9px;
+            font-size: 15px;
+            font-family: $primary-font;
+        }
+    }
+}
+
+.actualite {
+    text-align: center;
+    padding: 3% 0%;
+    h2 {
+        color: $primary-color;
+        font-size: 23px;
+        font-weight: 600;
+    }
+    p {
+        color: gray;
+        span {
+            color: $primary-text-color;
+        }
+    }
+}
+
+footer {
+    padding: 3% 0%;
+    background-color: #333333;
+    .contents {
+        color: white;
+        font-family: $primary-font;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        flex-direction: row;
+        p {
+            font-size: 15px;
+            padding: 0% 2%;
+        }
+        img {
+            border-radius: 20px;
+        }
+    }
+}

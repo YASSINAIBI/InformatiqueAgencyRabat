@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 .NavbarT {
   background-color: #fd7c00;
 }
@@ -16,6 +17,7 @@
   -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
   opacity: 1;
+  z-index: 3;
 }
 
 .NavbarT .navbar .navbar-nav .nav-item .leftContent {
@@ -43,9 +45,508 @@
   cursor: pointer;
 }
 
+.Navbar {
+  background-color: white;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.Navbar .navbar {
+  padding: 2%;
+}
+
+.Navbar .navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.Navbar .navbar .navbar-nav .nav-item:hover .drop-down {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.Navbar .navbar .navbar-nav .nav-item:hover .drop-down .NavbarT .drop-down {
+  display: none;
+}
+
+.Navbar .navbar .navbar-nav .nav-item .leftContent {
+  margin-right: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fd7c00;
+}
+
+.Navbar .navbar .navbar-nav .nav-item .drop-down {
+  position: absolute;
+  list-style: none;
+  padding: 15px;
+  background-color: white;
+  opacity: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.Navbar .navbar .navbar-nav .nav-item .drop-down li {
+  color: #fd7c00;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.Navbar .navbar .navbar-nav .nav-item .btn {
+  background-color: #fd7c00;
+  color: white;
+  padding: 25px 15px;
+  border-radius: 9px;
+}
+
+.asideNav {
+  position: fixed;
+  height: 100pc;
+  background-color: white;
+  z-index: 5;
+  top: 0;
+  display: none;
+}
+
+.asideNav .AsideNavContents {
+  margin-top: 12%;
+}
+
+.asideNav .AsideNavContents .contact-btn {
+  background-color: #fd7c00;
+  color: white;
+  padding: 15px 50px;
+  border-radius: 9px;
+  margin-left: 30px;
+}
+
+.asideNav .AsideNavContents .accordion .btn-link {
+  text-decoration: none;
+  color: #fd7c00;
+  text-transform: none;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.asideNav .AsideNavContents .accordion .collapsing ul, .asideNav .AsideNavContents .accordion .collapse ul {
+  list-style: none;
+}
+
+.asideNav .AsideNavContents .accordion .collapsing ul li, .asideNav .AsideNavContents .accordion .collapse ul li {
+  list-style: none;
+  color: #fd7c00;
+  font-family: "Quicksand", sans-serif;
+  text-transform: none;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.asideNavIsActivated {
+  width: 0px;
+}
+
+.topHeader {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15% 0%;
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.topHeader .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.topHeader .overlay .contents {
+  margin-top: 10%;
+}
+
+.topHeader .overlay .contents h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.topHeader .overlay .contents h2 {
+  color: white;
+  font-size: 40px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.topHeader .overlay .contents p {
+  color: white;
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.topHeader .overlay .contents button {
+  background-color: #fd7c00;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.topHeader .overlay .contents a {
+  color: white;
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.transformationDigitale {
+  text-align: center;
+  padding: 3% 0%;
+}
+
+.transformationDigitale h2 {
+  color: #fd7c00;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+.transformationDigitale p {
+  color: royalblue;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.transformationDigitale .BG {
+  background-image: url(../img/back2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10% 0%;
+}
+
+.transformationDigitale .BG .overlay {
+  position: absolute;
+  background-color: rgba(65, 105, 225, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.transformationDigitale .BG .overlay .contents {
+  margin-top: 2%;
+}
+
+.transformationDigitale .BG .overlay .contents .p1 {
+  color: white;
+}
+
+.transformationDigitale .BG .overlay .contents .p2 {
+  color: white;
+}
+
+.transformationDigitale .BG .overlay .contents .savoirPlus {
+  background-color: #fd7c00;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.decouvrez {
+  background-image: url(../img/back3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 6% 0%;
+  text-align: center;
+}
+
+.decouvrez .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.decouvrez .overlay .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.decouvrez .overlay .contents h2 {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.decouvrez .overlay .contents p {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+}
+
+.partenaire {
+  text-align: center;
+  padding: 6% 0%;
+}
+
+.partenaire .contents h2 {
+  color: #fd7c00;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.partenaire .contents p {
+  color: gray;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.partenaire .contents .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+}
+
+.partenaire .contents .number .total {
+  color: #fd7c00;
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.partenaire .contents .number .colored {
+  font-weight: bold;
+  font-size: 18px;
+  color: royalblue;
+}
+
+.vousSouhaitez {
+  background-image: url(../img/back4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 5% 0%;
+  text-align: center;
+}
+
+.vousSouhaitez .contents {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1% 4%;
+}
+
+.vousSouhaitez .contents h2 {
+  color: royalblue;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.vousSouhaitez .contents p {
+  color: royalblue;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.vousSouhaitez .contents .nousContacter {
+  background-color: #fd7c00;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.nosPartenaires {
+  text-align: center;
+  padding: 3% 0%;
+}
+
+.nosPartenaires .contents h2 {
+  color: #fd7c00;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nosPartenaires .contents p {
+  color: gray;
+}
+
+.nosPartenaires .contents p .f {
+  color: royalblue;
+  font-weight: bold;
+}
+
+.nosPartenaires .contents p .s {
+  color: #fd7c00;
+  font-weight: bold;
+}
+
+.nosPartenaires .contents .contacter {
+  background-color: #fd7c00;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.groupeProxiteam {
+  padding: 3% 0%;
+  background-color: #ecedee;
+}
+
+.groupeProxiteam .contents h2 {
+  color: royalblue;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.groupeProxiteam .contents p {
+  color: gray;
+}
+
+.groupeProxiteam .contents .contacter {
+  background-color: #fd7c00;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.actualite {
+  text-align: center;
+  padding: 3% 0%;
+}
+
+.actualite h2 {
+  color: #fd7c00;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.actualite p {
+  color: gray;
+}
+
+.actualite p span {
+  color: royalblue;
+}
+
+footer {
+  padding: 3% 0%;
+  background-color: #333333;
+}
+
+footer .contents {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .contents p {
+  font-size: 15px;
+  padding: 0% 2%;
+}
+
+footer .contents img {
+  border-radius: 20px;
+}
+
 @media (max-width: 575.99px) {
   .NavbarT {
     display: none;
+  }
+  .Navbar .Desktop {
+    display: none !important;
+  }
+  .topHeader {
+    height: 120%;
+  }
+  footer .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partenaire .contents .number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .transformationDigitale .BG {
+    padding: 30% 0%;
+  }
+  .decouvrez {
+    padding: 50% 0%;
   }
 }
 
@@ -53,11 +554,95 @@
   .NavbarT {
     display: none;
   }
+  .Navbar .Desktop {
+    display: none !important;
+  }
+  .topHeader {
+    height: 120%;
+  }
+  footer .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partenaire .contents .number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .transformationDigitale .BG {
+    padding: 30% 0%;
+  }
+  .decouvrez {
+    padding: 50% 0%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 991.99px) {
   .NavbarT {
     display: none;
+  }
+  .Navbar .Desktop {
+    display: none !important;
+  }
+  .topHeader {
+    height: 120%;
+  }
+  footer .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partenaire .contents .number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .transformationDigitale .BG {
+    padding: 20% 0%;
+  }
+  .decouvrez {
+    padding: 30% 0%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Navbar .Mobile {
+    display: none !important;
+  }
+  .asideNav {
+    display: none !important;
+  }
+  .topHeader {
+    height: 80%;
+  }
+  .transformationDigitale .BG {
+    padding: 20% 0%;
+  }
+  .decouvrez {
+    padding: 30% 0%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Navbar .Mobile {
+    display: none !important;
+  }
+  .asideNav {
+    display: none !important;
+  }
+  .topHeader {
+    height: 70%;
   }
 }
 /*# sourceMappingURL=main.css.map */
