@@ -1,73 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet">
-    <title>Title</title>
-</head>
-
-<body>
-    <header>
-
-        <div class="container-fluid nav-small d-none d-xl-block text-white">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="ste-info">
-                    ARESCOM - Solutions informatiques pour entreprises
-                </div>
-
-                <div>
-                    <div class="d-flex align-items-center">
-                        <li class="navItems">Assistance à distance</li>
-                        <li class="navItems">Espace client</li>
-                        <li class="navPhonePhoto"><img src="img/phone.jpg" alt=""></li>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent text-light">
-                <a class="navbar-brand text-white" href="#"><img height="100" width="300        " src="img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Acceuil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Pack maintenance</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Solution</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Solution</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Recrutement</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">CONTACT</a>
-                        </li>
-                        <li class="nav-item">
-
-                            <button type="button" class="btn btn-warning text-white"> <i class="fa fa-calculator "></i> Warning</button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-
-    </header>
+<?php 
+$title = "Home";
+include 'app/includes/head.php';
+?>
 
     <section class="videoSection">
         <iframe class="iframeVideo" src="https://player.vimeo.com/video/380003977?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0"></iframe>
@@ -249,59 +183,155 @@
                 <div class="col-lg col-md-5 formulaire">
                     <div class="d-flex justify-content-center">
                         <img src="img/calc.png" alt="">
-                        </div> 
-                        <h3 class="text-white formText">Un besoin urgent ? Demandez votre devis gratuit et sans engagement</h3>
+                    </div>
+                    <h3 class="text-white formText">Un besoin urgent ? Demandez votre devis gratuit et sans engagement</h3>
 
-                        <form action="" method="post">
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label for=""></label>
-                                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label for=""></label>
-                                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for=""></label>
-                                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for=""></label>
-                                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for=""></label>
-                                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for=""></label>
-                                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                </div>
-                                <button type="submit" class="btn btn-primary col">Submit</button>
+                    <form action="" method="post">
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Votre nom et prénom*" aria-describedby="helpId">
                             </div>
-
-
-                        </form>
-                            <p class="text-white">Vous souhaitez apporter plus de détails ? Cliquez ici !</p>
-                        <div class="form-check">
-                            <label class="form-check-label" style="color:#a3b8c7">
-                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
-                                J'accepte que mes informations soient utilisées pour ma demande et la relation commerciale qui pourrait en découler.
-
-                                Pour connaître et exercer vos droits, notamment de retrait de votre consentement à l’utilisation des données collectées par ce formulaire, veuillez consulter notre
-                            </label>
+                            <div class="form-group col-12">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Votre société*" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Votre numéro*" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Adresse email*" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Nb d'ordinateur(s)" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for=""></label>
+                                <input type="text" name="" id="" class="form-control" placeholder="Nb de serveur(s)" aria-describedby="helpId">
+                            </div>
+                            <button type="submit" class="btn btn-agence col text-white">Submit</button>
                         </div>
-                   
+
+
+                    </form>
+                    <p class="text-white">Vous souhaitez apporter plus de détails ? Cliquez ici !</p>
+                    <div class="form-check">
+                        <label class="form-check-label" style="color:#a3b8c7">
+                            <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                            J'accepte que mes informations soient utilisées pour ma demande et la relation commerciale qui pourrait en découler.
+
+                            Pour connaître et exercer vos droits, notamment de retrait de votre consentement à l’utilisation des données collectées par ce formulaire, veuillez consulter notre
+                        </label>
+                    </div>
+
 
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
-</body>
 
-</html>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-4 cardBanner1 text-center text-white">
+                <div class="d-flex justify-content-center">
+                    <img src="img/cbanner1.png" alt="" class="imgCbanner">
+                </div>
+                <strong>
+                    <span class="cBannerFont">+</span>
+                    <span class="cBannerN">400</span>
+                    <span class="cBannerFont"> PME</span>
+                </strong>
+                <p>font confiance à nos expertises</p>
+            </div>
+
+            <div class="col-md-4 cardBanner2 text-center text-white">
+                <div class="d-flex justify-content-center">
+                    <img src="img/cbanner2.png" alt="" class="imgCbanner">
+                </div>
+                <strong>
+                    <span class="cBannerFont">+</span>
+                    <span class="cBannerN">400</span>
+                    <span class="cBannerFont"> %</span>
+                </strong>
+                <p>de chiffre d’affaires en 2019</p>
+            </div>
+            <div class="col-md-4 cardBanner3 text-center text-white">
+                <div class="d-flex justify-content-center">
+                    <img src="img/cbanner3.png" alt="" class="imgCbanner">
+                </div>
+                <strong>
+                    <span class="cBannerFont">+</span>
+                    <span class="cBannerN">400</span>
+                    <span class="cBannerFont"> serveurs</span>
+                </strong>
+                <p>maintenus et supervisés 24h/24, 7J/7</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bgDown d-flex align-items-center">
+
+        <div class="bgDownOverlay">
+
+        </div>
+        <div class="container text-white containerBgDown">
+            <div class="d-flex justify-content-center">
+                <img src="img/news.png" alt="">
+            </div>
+            <h2 class="textBgDown text-center">SOYEZ TOUJOURS INFORMÉ DE TOUTES NOS ACTUALITÉS !
+                <br> ABONNEZ-VOUS À LA NEWSLETTER !
+            </h2>
+            <div class="form-row d-flex justify-content-center">
+                <div class="form-group col-md-4">
+                    <label for=""></label>
+                    <input type="text" name="" id="" class="form-control inputModed" placeholder="Votre nom*" aria-describedby="helpId">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for=""></label>
+                    <input type="text" name="" id="" class="form-control inputModed" placeholder="" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-agence col-md-8 text-white" style="background:#0b3f62">Submit</button>
+            </div>
+
+
+            <div class="d-flex justify-content-center mt-2">
+                <div class="form-check col-md-8 text-center">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                        En cochant cette case, je soumets le formulaire et accepte de recevoir des Newsletters venant de la société Arescom
+
+                        Vous pourrez facilement vous désabonner à tout moment via les liens de désabonnement les mails qui vous seront envoyés.
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container" style="padding: 50px;">
+
+        <div class="row justify-content-center">
+            <h2 class="titleBrand text-center">NOS CERTIFICATIONS ET PARTENAIRES TECHNOLOGIQUES</h2>
+            <p class="textBrand text-center">ARESCOM et son réseau de partenaires (Microsoft Partner, Microsoft Office 365 , HP Partner, Dell Partner, Apple, Sonicall, Google Apps) met tout en œuvre pour vous apporter les meilleures solutions informatiques pour répondre à vos besoins.</p>
+            <div class="col">
+                <img src="img/ms.jpg" width="283" height="106" class="brandImg" alt="">
+                <img src="img/dell.jpg" width="283" height="106" class="brandImg" alt="">
+                <img src="img/hp.jpg" width="283" height="106" class="brandImg" alt="">
+                <img src="img/dell2.jpg" width="283" height="106" class="brandImg" alt="">
+                <img src="img/office.jpg" width="283" height="106" class="brandImg" alt="">
+                <img src="img/apple.jpg" width="283" height="106" class="brandImg" alt="">
+                <img src="img/google.jpg" width="283" height="106" class="brandImg" alt="">
+                <img src="img/trend.jpg" width="283" height="106" class="brandImg" alt="">
+            </div>
+        </div>
+    </div>
+
+ <?php include 'app/includes/footer.php' ?>
